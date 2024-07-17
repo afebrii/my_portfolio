@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Expreriences from "./components/Expreriences";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <About />
         <Technologies />
         <Expreriences />
+        <Projects />
+        <Contacts />
       </div>
     </div>
   );
