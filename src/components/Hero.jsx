@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/profile2.png";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -31,7 +31,8 @@ const Hero = () => {
               animate="visible"
               className="text-3xl tracking-tight text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text"
             >
-              Mobile Developer
+              {/* Android Mobile Design & Developer */}
+              FullStack Android Mobile
             </motion.span>
             <motion.p
               variants={container(1)}
@@ -43,13 +44,16 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+        <div className="w-full lg:w-1/2 lg:p-5">
+          <div className="flex justify-center ">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
+              width={400}
+              height={400}
               src={profilePic}
+              className="rounded-2xl"
               alt="Andika Febriansyah"
             />
           </div>

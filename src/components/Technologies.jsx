@@ -1,9 +1,8 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { FaFigma } from "react-icons/fa";
+import { RiFlutterFill } from "react-icons/ri";
+import { RiFirebaseLine } from "react-icons/ri";
+import { FaPhp } from "react-icons/fa";
+import { FaLaravel } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -37,20 +36,28 @@ const Technologies = () => {
         className="flex flex-wrap items-center justify-center gap-4"
       >
         <motion.div
-          variants={iconVariants(2.5)}
+          variants={iconVariants(5)}
           initial="initial"
           animate="animate"
           className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <FaFigma className="text-orange-600 text-7xl" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <TbBrandNextjs className="text-7xl" />
+          <FaPhp className="text-7xl text-sky-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <FaLaravel className="text-red-600 text-7xl" />
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
@@ -58,31 +65,15 @@ const Technologies = () => {
           animate="animate"
           className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <SiMongodb className="text-green-500 text-7xl" />
+          <RiFlutterFill className="text-7xl text-cyan-600" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(5)}
           initial="initial"
           animate="animate"
           className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <DiRedis className="text-red-700 text-7xl" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="p-4 border-4 rounded-2xl border-neutral-800"
-        >
-          <FaNodeJs className="text-green-500 text-7xl" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="p-4 border-4 rounded-2xl border-neutral-800"
-        >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
+          <RiFirebaseLine className="text-yellow-500 text-7xl" />
         </motion.div>
       </motion.div>
     </div>
